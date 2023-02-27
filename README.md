@@ -5,6 +5,8 @@ CPT_S 489 Spring 2023 Express Demos
         - [ ] http module
         - [ ] request url
         - [ ] response (writeHead, write and end)
+        - [ ] simple routing
+        - [ ] dynamic content
         - [ ] serving static content (fs, readFilesync)
 - [ ] Intro to express
     - [ ] Basic routing
