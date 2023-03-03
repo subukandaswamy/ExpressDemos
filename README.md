@@ -25,3 +25,9 @@ Lecture 3/1/2023
         - [ ] processing lists
         - [ ] conditional statements
         - [ ] %include to compose templates
+
+Lecture 3/3/2023
+- [x] The concept on Sessions in a web application
+- [x] Express middleware for handling Form Data
+- [x] Using cookies to store and retrieve data from client side
+

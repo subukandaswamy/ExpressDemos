@@ -1,32 +1,33 @@
 const express = require("express")
+const cookieparser = require("cookie-parser")
 const app = express()
 
-function validateUser(req, res, next) {
-    // assume that I am doing some DB stuff
-    // and validation user
-    console.log("user is validated");
-    res.locals.name = "Jeremiah"
-    next()
-}
-
-app.use(validateUser)
-
-// app.get("/", (req, res, next) => {
-//     res.send("Hello! Welcome to the Server Side")
-// })
 
 app.use(express.static("html"))
+app.use(express.urlencoded({extended: false}))
+app.use(cookieparser())
 
 app.set("view engine","ejs")
-app.set("view", "assets")
 
 app.get("/", (req, res, next) => {
-    // assume that I pulled the username and balance
-    console.log(res)
-    //res.locals.name = "Logan"
-    res.render("index", {
-        balance: "1000000"
-    })
+    res.render("index")
+})
+
+app.get("/landing", (req, res) => {
+    let un = req.cookies.username
+    res.render("landing", {username: un})
+})
+app.get("/fail", (req, res) => {
+    res.send("failure!!")
+})
+
+app.post("/processform", (req,res) => {
+    if(req.body.password === "1234"){
+        res.cookie("username",req.body.username)
+        res.redirect("/landing")
+    }else{
+        res.redirect("/fail")
+    }
 })
 
 app.listen(3000, () => {
