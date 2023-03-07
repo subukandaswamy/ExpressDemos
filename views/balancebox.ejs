@@ -1,0 +1,8 @@
+<% if (locals.accounts) { %>
+    <div style="border: solid; border-color: blue; color: blue">
+        
+            <% for(acc of accounts){ %>
+            <h4>Account <%=acc.accname%> balance <%=acc.balance%>$</h4>
+            <%}%>
+    </div>
+    <% } %>

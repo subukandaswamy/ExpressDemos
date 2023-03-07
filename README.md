@@ -1,7 +1,7 @@
 # ExpressDemos
 CPT_S 489 Spring 2023 Express Demos
 
-Lecture 2/27/2023
+# Lecture 2/27/2023
 - [x] Nodemon setup
 - [x] http server without node
         - [x] http module
@@ -15,7 +15,7 @@ Lecture 2/27/2023
     - [ ] serving static content
     - [x] sendFile (using path)
 
-Lecture 3/1/2023
+# Lecture 3/1/2023
 - [x] Middleware
 - [x] Serving Static Content
 - EJS Templating engine
@@ -26,8 +26,21 @@ Lecture 3/1/2023
         - [ ] conditional statements
         - [ ] %include to compose templates
 
-Lecture 3/3/2023
+# Lecture 3/3/2023
 - [x] The concept on Sessions in a web application
 - [x] Express middleware for handling Form Data
 - [x] Using cookies to store and retrieve data from client side
+
+# Lecture 3/6/2023
+
+- EJS Templating engine
+    - [x] scripts in templates
+        - [x] processing lists
+        - [x] conditional statements
+        - [x] loops
+        - [x] %include to compose templates
+- [x] Express Router
+- [x] URL params
+- [ ] Query params 
+    
 
