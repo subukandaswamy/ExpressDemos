@@ -1,7 +1,7 @@
 # ExpressDemos
 CPT_S 489 Spring 2023 Express Demos
 
-# Lecture 2/27/2023
+## Lecture 2/27/2023
 - [x] Nodemon setup
 - [x] http server without node
         - [x] http module
@@ -15,7 +15,7 @@ CPT_S 489 Spring 2023 Express Demos
     - [ ] serving static content
     - [x] sendFile (using path)
 
-# Lecture 3/1/2023
+## Lecture 3/1/2023
 - [x] Middleware
 - [x] Serving Static Content
 - EJS Templating engine
@@ -26,12 +26,12 @@ CPT_S 489 Spring 2023 Express Demos
         - [ ] conditional statements
         - [ ] %include to compose templates
 
-# Lecture 3/3/2023
+## Lecture 3/3/2023
 - [x] The concept on Sessions in a web application
 - [x] Express middleware for handling Form Data
 - [x] Using cookies to store and retrieve data from client side
 
-# Lecture 3/6/2023
+## Lecture 3/6/2023
 
 - EJS Templating engine
     - [x] scripts in templates
@@ -42,5 +42,18 @@ CPT_S 489 Spring 2023 Express Demos
 - [x] Express Router
 - [x] URL params
 - [ ] Query params 
-    
+
+## Lecture 03/08/2023
+
+- Models in MVC
+    - [x] PostgreSQL and PgAdmin
+    - [x] Setting up the database and tables in PostgreSQL (SQL script)
+    - [x] Testing pg npm module for connecting to the database from Node
+    - [x] Writing our first model (User)
+    - [x] Bootstrap script
+        - [x] clear table
+        - [x] create a user instance
+    - [ ] sessions instead of cookies
+        - [ ] express-session
+    - [ ] using the model to do validate user and save user instance in session    
 

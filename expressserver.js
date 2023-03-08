@@ -4,6 +4,10 @@ const app = express()
 
 const adminRouter = require('./adminrouter')
 
+const User = require('./models/user')
+const pool = require('./db')
+const { deleteAllUsers } = require("./models/user")
+
 
 app.use(express.static("html"))
 app.use(express.urlencoded({extended: false}))
@@ -45,6 +49,13 @@ app.post("/processform", (req,res) => {
     }
 })
 
+function dbsetup() {
+    User.deleteAllUsers()
+    let user = new User('subu','1234')
+    user.save()
+}
+
 app.listen(3000, () => {
+    dbsetup()
     console.log("server started in port 3000");
 })
