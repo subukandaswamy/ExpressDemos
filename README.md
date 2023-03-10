@@ -53,7 +53,12 @@ CPT_S 489 Spring 2023 Express Demos
     - [x] Bootstrap script
         - [x] clear table
         - [x] create a user instance
-    - [ ] sessions instead of cookies
-        - [ ] express-session
-    - [ ] using the model to do validate user and save user instance in session    
+ 
 
+## Lecture 03/10/2023
+
+    - [x] using the model to do validate user 
+    - [x] sessions instead of cookies
+        - [x] express-session
+    - [x] Saving user instance in session
+    - [x] Passing and using query params  

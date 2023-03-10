@@ -16,6 +16,21 @@ class User {
             }
         })
     }
+    static async getUserByUsername(username, password){
+        let sql = `select * from users where username=$1 AND password = crypt($2, password)`
+        let values = [username, password]
+        try {
+            const res = await pool.query(sql, values)
+            if(res.rows.length > 0){
+                return new User(res.rows[0].username, res.rows[0].password)
+            }else{
+                return null
+            }
+          } catch (err) {
+            console.log(err.stack)
+          }
+
+    }
     static deleteAllUsers(){
         let sql = `TRUNCATE TABLE users`
         pool.query(sql, (err, res) => {
